@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"
+		></script>
+		<script type="text/javascript" src="/scripts/script.js"></script>
+		<script src="/scripts/client.js"></script>
+		<script>
+			document.getElementById('sendRequest');
+		</script>
+
+		<title>Tyler Caceres - messaging app example</title>
+	</head>
+	<body>
+		<h1>CHATROOM 1</h1>
+		<div
+			id="message-box1"
+			style="scroll-behavior: auto; overflow:auto; border: 5px solid red; height: 40vh; max-height: 45vh;"
+		></div>
+
+		<h1>CHATROOM 2</h1>
+		<div
+			id="message-box2"
+			style="scroll-behavior: auto; overflow:auto; border: 5px solid red; height: 40vh; max-height: 45vh;"
+		>
+			<ul></ul>
+		</div>
+		<div>
+			<label>Chatroom ID</label>
+			<input id="chatroom-id" />
+			<label>User ID</label>
+			<input id="user-id" />
+			<Form id="message-form">
+				<Label>Message: </Label>
+				<input id="message" style="width: 50vw; height: 10vh" />
+				<button type="submit">SUBMIT</button>
+			</Form>
+		</div>
+
+		<button id="sendRequest"></button>
+	</body>
+</html>
